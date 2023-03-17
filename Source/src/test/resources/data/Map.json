@@ -1,0 +1,5 @@
+{
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "#{randomUuid()}"
+}

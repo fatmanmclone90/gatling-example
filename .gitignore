@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+target
+.vs
+.vscode
+bin
+obj
+**/executionLogs.txt
+**/.log
+.metals/

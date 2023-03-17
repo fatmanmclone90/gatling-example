@@ -1,0 +1,51 @@
+trigger: none 
+
+variables:
+  - group: whds-service-connections
+
+parameters:
+- name: durationSeconds
+  displayName: Duration in seconds.
+  type: number
+
+- name: numberOfMessages
+  displayName: Number of messages to send.
+  type: number
+
+- name: timeoutMinutes
+  displayName: Pipeline timeout in minutes.
+  type: number
+  
+jobs:
+- job: LoadTest
+  timeoutInMinutes: ${{parameters.durationSeconds}}
+  variables:
+  - name: folderName
+    value: ''
+  steps:
+
+  - task: Maven@3
+    displayName: 'Install Maven'
+    inputs:
+      mavenPomFile: '$(build.sourcesdirectory)/Source/'
+
+  - powershell: 'mvn clean gatling:test -DbaseUrl="$(base_url)" -DdurationSeconds="${{parameters.durationSeconds}}" -DnumberOfMessages="${{parameters.numberOfMessages}}" -DheaderCode="$(header_code)" -DapiKey="$(api_key)" "-Dgatling.simulationClass=com.next.simulations.LoadTest"'
+    workingDirectory: '$(build.sourcesdirectory)/Source/'
+    displayName: 'Execute Performance Test'
+
+  - task: PowerShell@2
+    displayName: Get Last Run
+    condition: always()
+    inputs:
+      targetType: 'inline'
+      script:  |
+        $lastRunValue =  Get-Content $(Build.sourcesdirectory)/Source/target/gatling/lastRun.txt
+        Write-Host "##vso[task.setvariable variable=folderName]$lastRunValue";
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Results'
+    condition: always()
+    inputs:
+      PathtoPublish: '$(Build.sourcesdirectory)/Source/target/gatling/$(folderName)'
+      storeAsTar: true
+      artifactName: testReport
