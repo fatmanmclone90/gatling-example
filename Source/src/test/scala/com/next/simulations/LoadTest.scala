@@ -11,15 +11,13 @@ class LoadTest extends Simulation {
   val _durationSeconds: Int = durationSeconds;
   
   // https://gatling.io/docs/gatling/reference/current/core/injection/
-  val _mapScenarioBuilder = new MapScenarioBuilder
-  private val _mapSimulation = _mapScenarioBuilder.Build()
+  private val _mapSimulation = (new MapScenarioBuilder).Build()
   .inject(
     rampUsers(_numberOfMessages)
     .during(_durationSeconds)
   )
 
-  val _validateScenarioBuilder = new ValidateScenarioBuilder
-  private val _validateSimulation = _validateScenarioBuilder.Build()
+  private val _validateSimulation = (new ValidateScenarioBuilder).Build()
   .inject(
     rampUsers(_numberOfMessages)
     .during(_durationSeconds)

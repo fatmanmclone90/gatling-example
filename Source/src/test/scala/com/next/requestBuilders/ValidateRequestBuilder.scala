@@ -9,14 +9,11 @@
  // https://gatling.io/docs/gatling/reference/current/http/request/
  class ValidateRequestBuilder {
    def Build() : HttpRequestBuilder = {
-
-     val _request = http(s"Post Validate")
+     return http(s"Post Validate")
       .post(baseUrl + s"/Validate")
       .header("Api-Key", apiKey)
       .header("X-Correlation-ID", "#{uuid}")
       .body(ElFileBody("data//Validate.json")).asJson
       .check(status is 200)
-
-     return _request
   }
  }

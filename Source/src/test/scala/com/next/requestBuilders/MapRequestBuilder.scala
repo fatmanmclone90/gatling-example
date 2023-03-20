@@ -8,14 +8,11 @@
 
  class MapRequestBuilder {
    def Build() : HttpRequestBuilder = {
-
-     val _request = http(s"Post Map")
+     return http(s"Post Map")
       .post(baseUrl + s"/Map")
       .header("Api-Key", apiKey)
       .header("X-Correlation-ID", "#{uuid}")
       .body(ElFileBody("data//Map.json")).asJson
       .check(status is 200)
-
-     return _request
   }
  }
