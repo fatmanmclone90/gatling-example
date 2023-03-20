@@ -8,5 +8,5 @@ target
 bin
 obj
 **/executionLogs.txt
-**/.log
+**/*.log
 .metals/
