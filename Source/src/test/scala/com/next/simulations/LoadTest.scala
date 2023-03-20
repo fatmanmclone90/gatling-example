@@ -10,6 +10,7 @@ class LoadTest extends Simulation {
   val _numberOfMessages: Int = numberOfMessages;
   val _durationSeconds: Int = durationSeconds;
   
+  // https://gatling.io/docs/gatling/reference/current/core/injection/
   val _mapScenarioBuilder = new MapScenarioBuilder
   private val _mapSimulation = _mapScenarioBuilder.Build()
   .inject(
@@ -24,6 +25,7 @@ class LoadTest extends Simulation {
     .during(_durationSeconds)
   )
 
+  // https://gatling.io/docs/gatling/reference/current/core/assertions/
   setUp(_mapSimulation, _validateSimulation)
     .assertions(global.responseTime.percentile(95).lt(1000))
     .assertions(global.failedRequests.percent.lt(1))

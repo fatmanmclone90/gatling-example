@@ -8616,3 +8616,5391 @@ body:
     ]
 }
 <<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:13.183 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,6,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@14781687, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7706dc78, uuid -> 45ed82d3-f26d-4537-98f8-288ea41be7b7),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@315df4bb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 45ed82d3-f26d-4537-98f8-288ea41be7b7
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "d5d60e0c-a9c0-0cd9-83ab-b0ffb31bf228"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:13.466 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,7,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1ed437b7, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5bd6aa09, uuid -> 9e677bc7-fe13-401e-9be5-ade4bd881194),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@3fc08eec)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 9e677bc7-fe13-401e-9be5-ade4bd881194
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "6",
+  "version": "02",
+  "uniqueKey": "e3b2de14-d2d3-0364-a186-a438df865a99"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:13.776 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,2,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@678331c7, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2281a353, uuid -> 818b2b98-9184-43bd-bfba-e5a775b72766),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@61e3a1fd)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 818b2b98-9184-43bd-bfba-e5a775b72766
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "acb5a397-192f-0cf5-94e6-6cfc9db090bd"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:13.855 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,1,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5eb8c714, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@75be2da6, uuid -> 730e1150-214d-4a63-8f02-e400e0ba2942),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@6bd51ed8)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 730e1150-214d-4a63-8f02-e400e0ba2942
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "e5137e19-ec6c-0b0b-b6d6-9c0677e8982e"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:13.998 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,8,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6e16fd50, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2b147ef6, uuid -> 4bd2d8de-d525-48bc-8f88-6904cbb0e4fa),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@5cad8b7d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 4bd2d8de-d525-48bc-8f88-6904cbb0e4fa
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "9",
+  "version": "02",
+  "uniqueKey": "bf7b5dda-2cbe-017d-8d18-6dc48f073250"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:14.411 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,9,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@b438646, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4e41094a, uuid -> 945f2aa3-bf1e-492a-a4e5-632c828c67e2),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@7b02e036)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 945f2aa3-bf1e-492a-a4e5-632c828c67e2
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "e0c9e201-eafb-0629-ae1d-fb1b56611ebe"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:14.455 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,3,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@4520bc56, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@222a96, uuid -> 956dd9b6-3382-4055-b86f-152eaad2a1b1),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@51abf713)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 956dd9b6-3382-4055-b86f-152eaad2a1b1
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "e65415b7-e991-08ef-a3ac-fca2fbf418be"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:14.893 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,4,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@72730df, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4225ae5f, uuid -> 13bd0473-87e0-45e7-878d-2160ef875a12),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@eadb475)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 13bd0473-87e0-45e7-878d-2160ef875a12
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b96d5b5e-c42a-0304-afc6-08fd31396f89"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:14.978 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,10,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@25c7d276, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@60c548aa, uuid -> 1765bdb3-749b-43c5-94ec-c3f3bef16569),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@25243bc1)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 1765bdb3-749b-43c5-94ec-c3f3bef16569
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "abe70ec5-8374-0915-9734-3cf54db48024"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:15.210 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,5,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@725bcd28, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@37595d07, uuid -> cbfcfd80-2f0a-4264-84dd-561989b9d194),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@4d4d48a6)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cbfcfd80-2f0a-4264-84dd-561989b9d194
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "9122c1c2-ac35-0dea-a67b-e08b7a646bc0"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:15.495 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,13,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@451e709a, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@1ce65d, uuid -> a4acc31d-bc54-41a3-a8f6-9610804f76fe),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@4201a617)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: a4acc31d-bc54-41a3-a8f6-9610804f76fe
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "7",
+  "version": "02",
+  "uniqueKey": "ab8d86cc-6fd4-0a2f-b071-b114ddc2ca65"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:15.953 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'Post Validate' failed for user 14: status.find.is(200), but actually found 500
+10:19:15.954 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: KO status.find.is(200), but actually found 500
+=========================
+Session:
+Session(Validate Request,14,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1d2199d4, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4dce594d, uuid -> cdda7b73-960e-4f8c-bf5c-0df0ec261946),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@467f77a5)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cdda7b73-960e-4f8c-bf5c-0df0ec261946
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "1",
+  "version": "02",
+  "uniqueKey": "9737752f-d289-097a-81cb-079f116fa255"
+}}
+=========================
+HTTP response:
+status:
+	500 Server Error
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: f60fcefc-a79f-49f5-b3f4-9c4391f9f8f8
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Error": "Please try again later."
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:16.428 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'Post Validate' failed for user 17: status.find.is(200), but actually found 500
+10:19:16.428 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: KO status.find.is(200), but actually found 500
+=========================
+Session:
+Session(Validate Request,17,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@79401699, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3c4287d5, uuid -> 039b7bc4-5d96-4a9c-b055-e7788b7f4553),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@df5f5c0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 039b7bc4-5d96-4a9c-b055-e7788b7f4553
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "1",
+  "version": "02",
+  "uniqueKey": "96810b25-6142-0651-b476-d2db122b62b1"
+}}
+=========================
+HTTP response:
+status:
+	500 Server Error
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: f60fcefc-a79f-49f5-b3f4-9c4391f9f8f8
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Error": "Please try again later."
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:16.481 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,12,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3fe1185a, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7ae381c2, uuid -> ab9a8ebc-e45f-4921-abae-12235c9094fb),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@2e6ee0bc)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: ab9a8ebc-e45f-4921-abae-12235c9094fb
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "80f66d1f-de7f-0d22-9c2e-87ab2b26bc32"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:16.642 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,11,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7fa2a27d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3aa033ed, uuid -> b6f2732f-e8e7-4956-972f-b1707f157412),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@1e287667)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: b6f2732f-e8e7-4956-972f-b1707f157412
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "c61fa5e8-846f-0b07-947a-0ee903d04fc1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:16.927 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'Post Validate' failed for user 18: status.find.is(200), but actually found 500
+10:19:16.927 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: KO status.find.is(200), but actually found 500
+=========================
+Session:
+Session(Validate Request,18,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3a425196, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7f40d8ba, uuid -> e28769e6-47fa-45d8-9e26-474288cede57),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@308a6984)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: e28769e6-47fa-45d8-9e26-474288cede57
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "1",
+  "version": "02",
+  "uniqueKey": "9d60193d-e216-08e7-87cd-de208f88565f"
+}}
+=========================
+HTTP response:
+status:
+	500 Server Error
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: f60fcefc-a79f-49f5-b3f4-9c4391f9f8f8
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Error": "Please try again later."
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:17.173 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,15,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@c611cc4, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4963832c, uuid -> cebd7675-5c2c-4c71-b4c1-ca83d800a908),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@1bb9aa43)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cebd7675-5c2c-4c71-b4c1-ca83d800a908
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "c0631339-d084-0e34-b882-e9471cb2fda0"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:17.481 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,21,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3848962d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7d4a0f40, uuid -> c2727390-8735-4ea4-a890-833487d96fd4),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@58cd06cb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: c2727390-8735-4ea4-a890-833487d96fd4
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "f2137ce7-f750-0925-883c-9649d004dc8a"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:17.589 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,19,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@199065aa, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5c92f8fc, uuid -> 0195d125-3158-40c8-aa25-856e4b415ae0),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@66b72664)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 0195d125-3158-40c8-aa25-856e4b415ae0
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "cf696970-99dc-0315-aabd-c594935d42d5"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:17.867 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,16,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@31f7073b, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@74f59f61, uuid -> bc1aeb80-9f16-4681-86d3-9ba084de8483),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@420bc288)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: bc1aeb80-9f16-4681-86d3-9ba084de8483
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "83a4b716-7b9a-08ff-9ec3-9477774691be"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:17.962 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,22,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7c2540d2, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3927c132, uuid -> b6e65289-a99c-41ce-834e-d81ba1cba790),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@3be8821f)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: b6e65289-a99c-41ce-834e-d81ba1cba790
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "4",
+  "version": "02",
+  "uniqueKey": "e9c2120a-e752-08dd-836b-d4a225eb75d6"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:18.064 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,20,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3af723b6, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7ff5aa8c, uuid -> e88750bb-c3b7-489d-b0ac-a440deb43c78),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@7a34b7b8)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: e88750bb-c3b7-489d-b0ac-a440deb43c78
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "d7f671f5-92cb-058f-b66d-6427790b3612"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:18.504 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,24,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@21d13a19, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@64d3a047, uuid -> c175124e-8de8-4903-b069-028c99f4b800),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@3b65e559)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: c175124e-8de8-4903-b069-028c99f4b800
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "e0c49d15-2d99-0c28-8882-1a167fca5223"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:18.927 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,23,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@183ac531, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5d384852, uuid -> 418b37de-567a-4709-9c7e-10563032111a),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@64b31700)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 418b37de-567a-4709-9c7e-10563032111a
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "8241d150-b8cd-0d4b-b068-1371b5f7082b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:19.065 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,28,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3c914226, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7993cbd0, uuid -> 608a94c4-62e9-4ad9-a74c-03f8c3bc432a),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@1c05a54d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 608a94c4-62e9-4ad9-a74c-03f8c3bc432a
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "6",
+  "version": "02",
+  "uniqueKey": "b8cdf08a-5c2d-033f-aeed-6deea11de82f"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:19.548 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,29,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@198eba79, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5c8c372c, uuid -> 41314474-8aa0-478b-9318-1e3226b676ab),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@65ef722a)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 41314474-8aa0-478b-9318-1e3226b676ab
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "4",
+  "version": "02",
+  "uniqueKey": "c449dad8-8612-007b-b5a2-1447c8551713"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:19.552 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,25,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3ee585f2, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7be71c4a, uuid -> 4a446ea6-e56b-45d1-bbdd-7b298457d473),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@bae47a0)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 4a446ea6-e56b-45d1-bbdd-7b298457d473
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "902b3e83-4e46-0bbb-a20f-bf37522724f7"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:19.602 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,26,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3b4c1f72, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7e4e967f, uuid -> 7267d37e-b0e5-44f1-9fa4-7cdf16f16855),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@74a9c4b0)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 7267d37e-b0e5-44f1-9fa4-7cdf16f16855
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "8b33545c-7a96-02ee-81c7-17b8fddf3abe"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:19.918 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,30,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@14a30286, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@51a18e76, uuid -> 132faaa5-879c-4a82-83cf-5223adfc5264),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@5fd9b663)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 132faaa5-879c-4a82-83cf-5223adfc5264
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "6",
+  "version": "02",
+  "uniqueKey": "fe67f043-ea20-0266-8daf-a223a96f8cbd"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:20.430 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,27,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7ae6c403, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3fe4453b, uuid -> cb287a3f-f40b-4425-81f0-a0db3452fc49),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@85ec632)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cb287a3f-f40b-4425-81f0-a0db3452fc49
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b32dcb45-9397-0f6c-a8b5-710429f00a00"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:20.448 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,33,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1dd10c86, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@1986d187, uuid -> 2b1b4d6d-eceb-4635-a6c8-0a43b4ca6494),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@6bd51ed8)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 2b1b4d6d-eceb-4635-a6c8-0a43b4ca6494
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "9",
+  "version": "02",
+  "uniqueKey": "80a7f95f-5703-0150-ac8f-9ef577f53a1d"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:20.918 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,34,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@42ae5c1c, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@103e5d54, uuid -> cad0d06f-53a1-4dc7-af6d-454f887d8025),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@61e3a1fd)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cad0d06f-53a1-4dc7-af6d-454f887d8025
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "f40913b4-9450-073b-b6c3-45f691335ac6"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:21.140 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,32,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5b5f8912, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@27e6a227, uuid -> 230e56cc-4e45-4df3-bbe3-3ad914254131),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@271f18d3)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 230e56cc-4e45-4df3-bbe3-3ad914254131
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "fd827f2b-3d3b-0906-bfcd-3c26d951ab65"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:21.498 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,37,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2aba737d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5776a248, uuid -> 6c832436-0a23-4bce-ad4a-7d19142e5981),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@4d4d48a6)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 6c832436-0a23-4bce-ad4a-7d19142e5981
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "9e66c52d-9016-0a6b-9646-4320a66abe6a"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:21.730 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,31,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@250b3411, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@6009bed4, uuid -> 0e856833-b878-4ce4-bfc9-8521012175a6),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@214894fc)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 0e856833-b878-4ce4-bfc9-8521012175a6
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "aae7a6c0-2e4b-0119-b2a5-ec84bd769866"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:21.946 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,38,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7a876134, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@77269d51, uuid -> b69da81f-cf67-4ac4-b314-c231c72c0742),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@315df4bb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: b69da81f-cf67-4ac4-b314-c231c72c0742
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "ada463eb-4094-05c4-87ca-1e1752fe8a9b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:22.087 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,35,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@71ea27e8, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@600dd5d9, uuid -> ad3ef9d8-656f-4817-96c5-bbac4dceef49),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@51abf713)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: ad3ef9d8-656f-4817-96c5-bbac4dceef49
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b6d4fb37-5b62-084e-893e-09f80da0a14c"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:22.144 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,36,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@4db249af, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@220a5110, uuid -> cf1a1805-ab8f-4f73-84a2-ddac39d2198e),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@eadb475)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cf1a1805-ab8f-4f73-84a2-ddac39d2198e
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "e1efa97a-ce82-043a-8df0-0d4cbbd47de9"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:22.522 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,40,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@4350a4eb, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4b3b81b9, uuid -> de922bf7-42c8-4971-93d6-da03fed24004),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@15be84c5,io.netty.channel.nio.NioEventLoop@5cad8b7d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: de922bf7-42c8-4971-93d6-da03fed24004
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "886338f9-b634-05c1-98b1-426d387dde66"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:19:22.859 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,39,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@55113b0f, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3bf95546, uuid -> a7fbf1b3-5464-441f-94a8-d2123c75dfeb),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x00000008010656e8@1598fb56,io.netty.channel.nio.NioEventLoop@3fc08eec)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: a7fbf1b3-5464-441f-94a8-d2123c75dfeb
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "e22eaffc-e210-082e-8bbd-2174fcd68efd"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:01.119 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,6,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@4b69c60c, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5325482b, uuid -> cac037f8-ec41-4180-bb83-d9de40d8246d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@315df4bb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: cac037f8-ec41-4180-bb83-d9de40d8246d
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "a57e3b4d-a8bf-0aeb-a40d-812ab703e01f"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:01.376 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,1,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@65d5320b, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4fa8844f, uuid -> 23aa1174-d3a8-4c68-a1bf-6343f0ea8725),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@6bd51ed8)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 23aa1174-d3a8-4c68-a1bf-6343f0ea8725
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b1f6e015-0a0d-0bc1-858d-7d6c5a384e95"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:01.630 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,7,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3696001c, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@739498aa, uuid -> 81a48830-ee79-4258-900a-8a44745e496c),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@3fc08eec)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 81a48830-ee79-4258-900a-8a44745e496c
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "e040f2f9-76b6-08bb-966e-7c4162d8ab75"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:02.167 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,3,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2567be15, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@606524dd, uuid -> 45ee7a84-76d2-4c95-a509-2ef6f4b3cdba),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@51abf713)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 45ee7a84-76d2-4c95-a509-2ef6f4b3cdba
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "920b8950-40a5-06f3-909d-3585bdc72481"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:02.198 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,8,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@725bcd28, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@37595d07, uuid -> 8756b0c0-6262-48bf-b57f-454d0095582e),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@5cad8b7d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 8756b0c0-6262-48bf-b57f-454d0095582e
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "9",
+  "version": "02",
+  "uniqueKey": "a46cd787-245d-06e6-b16f-af5c8ed8e8eb"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:02.623 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,9,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@425eedeb, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@75c6bc4, uuid -> 8b7f6ddd-4f9d-4d7d-b1c2-5e97a1fac35f),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@7b02e036)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 8b7f6ddd-4f9d-4d7d-b1c2-5e97a1fac35f
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "4",
+  "version": "02",
+  "uniqueKey": "be2a7627-04d0-0b9c-9d93-25a03db61a01"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:02.644 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,4,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6382e2d8, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@268060cc, uuid -> df8d60a5-b9a8-4b45-87e8-dc291aaad868),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@eadb475)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: df8d60a5-b9a8-4b45-87e8-dc291aaad868
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "f4ad13bf-63a8-079f-8633-2d289fc32e9b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:03.123 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,5,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2125f3b0, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@642779f0, uuid -> 7024908d-e0ed-41cb-941c-c469465c4c3c),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@4d4d48a6)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 7024908d-e0ed-41cb-941c-c469465c4c3c
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "f0d85950-0cb4-07f8-b6ee-1a2120661386"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:03.205 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,10,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2f4c8578, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@6a4e0ef5, uuid -> e54107b1-f4a0-4ade-b5dd-7ec7b10e9b7c),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@25243bc1)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: e54107b1-f4a0-4ade-b5dd-7ec7b10e9b7c
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "d367755e-07b8-0edf-a283-6e3cbf761a04"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:03.651 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,13,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@38e4194c, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7de69034, uuid -> 9bbf39c2-b1b3-4f3a-8eae-912170b02faf),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@4201a617)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 9bbf39c2-b1b3-4f3a-8eae-912170b02faf
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "6",
+  "version": "02",
+  "uniqueKey": "c46e440a-e9c4-0378-b059-aa45d42800d4"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:04.099 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,14,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6eea533, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@43ec3b8a, uuid -> 50b2c231-d00f-407c-a5ca-7d6350d0f365),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@467f77a5)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 50b2c231-d00f-407c-a5ca-7d6350d0f365
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "b1f59fa5-314b-0a3b-8d10-c7558a2d37cd"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:04.117 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,2,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@258bb0ff, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@60893a2a, uuid -> 0cd0e74c-7394-4b4d-85c6-d16dc43bf680),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@61e3a1fd)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 0cd0e74c-7394-4b4d-85c6-d16dc43bf680
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "d11d9958-8f4a-04a8-8d57-59ef468de194"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:04.197 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,11,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2a0a0a0, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@47a22e90, uuid -> 3abd331b-2d4e-4a38-afd6-23273874a253),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@1e287667)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 3abd331b-2d4e-4a38-afd6-23273874a253
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b44eabd8-781a-0731-bb7e-bcd475ec71d1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:04.370 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,12,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@777d7e87, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@327fee0c, uuid -> e69e63b6-962b-403d-ac78-64125ab6de43),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@2e6ee0bc)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: e69e63b6-962b-403d-ac78-64125ab6de43
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "c5a9d9da-516b-0201-acbc-870bd2be0590"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:04.746 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,17,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@74d69179, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@31d41187, uuid -> e35f1a3a-c383-4c7a-858b-69e7e170bc9d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@df5f5c0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: e35f1a3a-c383-4c7a-858b-69e7e170bc9d
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "e9618482-0a03-01b5-9331-fe91daf314bb"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:04.804 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,15,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1c347a6d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5936f78f, uuid -> 59f46db3-26de-4c1a-ba04-a3ea95ac2320),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@1bb9aa43)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 59f46db3-26de-4c1a-ba04-a3ea95ac2320
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "85f9a4e0-b81a-048e-8dd1-774bd53d4f02"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:05.100 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'Post Validate' failed for user 18: status.find.is(200), but actually found 500
+10:25:05.101 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: KO status.find.is(200), but actually found 500
+=========================
+Session:
+Session(Validate Request,18,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6f582009, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@11e36a5b, uuid -> 2a0cd10e-a05a-42cd-be01-fd139cbde457),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@308a6984)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 2a0cd10e-a05a-42cd-be01-fd139cbde457
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "1",
+  "version": "02",
+  "uniqueKey": "85e7c3db-455b-0d49-9cee-53f4d0501eec"
+}}
+=========================
+HTTP response:
+status:
+	500 Server Error
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: f60fcefc-a79f-49f5-b3f4-9c4391f9f8f8
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Error": "Please try again later."
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:05.241 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,16,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@568d8bbd, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@138f0f08, uuid -> 78cc396a-7a3c-4f06-90ec-19c959a83ee4),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@420bc288)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 78cc396a-7a3c-4f06-90ec-19c959a83ee4
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "ee0b491e-c4c4-00b1-aa15-c2e59e5f70e1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:05.638 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,21,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7a034a52, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3f01db76, uuid -> 4fbaf591-b1a3-406a-8a78-70c5c726cf53),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@58cd06cb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 4fbaf591-b1a3-406a-8a78-70c5c726cf53
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "4",
+  "version": "02",
+  "uniqueKey": "a750d8df-7c11-0309-8c8e-eec492b35736"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:06.193 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,19,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@63e8b3e9, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@26ea21f0, uuid -> 8c7d0ffe-de06-4492-b8e4-6e636e1a157b),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@66b72664)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 8c7d0ffe-de06-4492-b8e4-6e636e1a157b
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "9a37cf68-cc1e-0552-a711-8e5403233325"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:06.238 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'Post Validate' failed for user 22: status.find.is(200), but actually found 500
+10:25:06.238 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: KO status.find.is(200), but actually found 500
+=========================
+Session:
+Session(Validate Request,22,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3b2a9551, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7e281c50, uuid -> bfb6a1a0-00ed-4969-925b-3bdc113fff5e),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@3be8821f)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: bfb6a1a0-00ed-4969-925b-3bdc113fff5e
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "1",
+  "version": "02",
+  "uniqueKey": "bb512725-56ad-083a-81f9-09e60d8067b3"
+}}
+=========================
+HTTP response:
+status:
+	500 Server Error
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: f60fcefc-a79f-49f5-b3f4-9c4391f9f8f8
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Error": "Please try again later."
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:06.423 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,20,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@388d2069, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7d8fa91c, uuid -> dcbae2ee-d8f1-45e4-9a21-333a7883973f),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@7a34b7b8)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: dcbae2ee-d8f1-45e4-9a21-333a7883973f
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "ddad935e-364d-0020-9d4f-1c3999006cdc"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:06.627 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,25,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5c84d325, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@198646d1, uuid -> ff4a9a44-2112-458a-b453-a5294f4e2aac),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@bae47a0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: ff4a9a44-2112-458a-b453-a5294f4e2aac
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "7",
+  "version": "02",
+  "uniqueKey": "8f5b88ba-7e3d-003c-80e4-42e65efdd9e8"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:07.182 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,26,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@73b129dc, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@36b3a9ce, uuid -> 8def8c30-54f4-4982-aca5-e838592c7fbb),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@74a9c4b0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 8def8c30-54f4-4982-aca5-e838592c7fbb
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "825a8fda-83a8-03e0-9f9f-a8d2da772899"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:07.216 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,23,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@295a7bd3, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@6c58f09c, uuid -> ff7fdd28-e8c7-4930-8f22-82f8f14a60bc),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@64b31700)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: ff7fdd28-e8c7-4930-8f22-82f8f14a60bc
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "f591eaae-1524-00df-8585-8224bef3259d"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:07.495 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,24,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3967f0, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@453bf993, uuid -> 86bcb86d-3d92-4998-b5c8-8f646fce512a),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@3b65e559)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 86bcb86d-3d92-4998-b5c8-8f646fce512a
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "d78c71fe-6671-0615-9d5e-0354e3bc3b9a"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:07.658 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,29,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7d89831c, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@388b12c9, uuid -> e3618bda-5525-449f-8bb4-b9a8ce0bb6de),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@65ef722a)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: e3618bda-5525-449f-8bb4-b9a8ce0bb6de
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "e562a1ab-ec6d-0539-ac1c-85173c9fa6ea"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:08.238 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,30,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@d005793, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4802d857, uuid -> af3831a5-efba-4eb4-bcf5-f887d7a08c23),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@5fd9b663)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: af3831a5-efba-4eb4-bcf5-f887d7a08c23
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "e72e4574-0a38-0cfe-93ef-395f22a7b31b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:08.585 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,33,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7ecb0491, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@74b3a20b, uuid -> 5eff78d6-0d93-4a16-bb86-77f4bb94f2c2),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@6bd51ed8)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 5eff78d6-0d93-4a16-bb86-77f4bb94f2c2
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "a5515186-da35-01a5-b8e4-9dc0c99df4fe"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:08.796 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,27,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7bcf97d3, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3ecd06ce, uuid -> 21b2c8fd-0550-41de-87c8-c53b7dbf14a6),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@85ec632)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 21b2c8fd-0550-41de-87c8-c53b7dbf14a6
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "bf5971ff-da86-043c-b9ed-52f802ff7057"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:08.814 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,28,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@424eb3e5, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@74c35c8, uuid -> 8261f4bd-2f37-4d4a-835b-09ce54fef9ef),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@1c05a54d)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 8261f4bd-2f37-4d4a-835b-09ce54fef9ef
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b5aea162-ea9d-0564-8ee4-5900851755b0"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:09.045 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,31,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@578e6bf0, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@128cff65, uuid -> 26d0ae23-39fc-4daa-a72f-4e58e87c8878),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@214894fc)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 26d0ae23-39fc-4daa-a72f-4e58e87c8878
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b296db82-610f-0518-be6c-6206882151f2"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:09.111 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,34,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@29d7e21f, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@a6c565, uuid -> d2dccdf7-ee25-4edd-856c-391109895911),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@61e3a1fd)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: d2dccdf7-ee25-4edd-856c-391109895911
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "a4fcf6e7-5ead-0536-a86f-444322b4786b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:09.576 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,37,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5bbf8cc1, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@40886bf, uuid -> 3f00ffd1-5b54-4978-afc1-b3d198c591d9),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@4d4d48a6)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 3f00ffd1-5b54-4978-afc1-b3d198c591d9
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "8c123a43-66f7-001a-8045-993fa4dd42d5"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:09.746 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,35,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@49c04dbb, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4adb92, uuid -> 650eb6b7-f36c-4437-9ba1-40b5ad5cbe9a),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@51abf713)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 650eb6b7-f36c-4437-9ba1-40b5ad5cbe9a
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "ad11b7bb-dd0a-06fd-bedc-76e5958a0466"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:09.879 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,32,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2e11cb5b, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5dc77e21, uuid -> 20eb7c7d-adf8-4895-ba0c-2330b53f7f30),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@271f18d3)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 20eb7c7d-adf8-4895-ba0c-2330b53f7f30
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "fb5d77b4-80f2-0cca-8798-3187957072b6"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:10.087 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,38,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@e901c1a, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@61584047, uuid -> 183b1bf2-86fd-41d9-9068-0e8cb19d6b1d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@315df4bb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 183b1bf2-86fd-41d9-9068-0e8cb19d6b1d
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "9e59a0d2-2953-0a19-8048-70e68ba38830"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:10.090 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,36,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@630c052e, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@46af9f83, uuid -> 9a1802f1-f3f5-4c0c-b7ab-6fa89acd7c0d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@eadb475)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 9a1802f1-f3f5-4c0c-b7ab-6fa89acd7c0d
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "d130aa2e-e4fa-0695-88b3-65090778f092"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:10.613 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,40,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2aba737d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5776a248, uuid -> 4f68ac1f-cecd-419c-9ad4-f8e339a12acd),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@4e003b1c,io.netty.channel.nio.NioEventLoop@5cad8b7d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 4f68ac1f-cecd-419c-9ad4-f8e339a12acd
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "9",
+  "version": "02",
+  "uniqueKey": "8b205ce1-7c5c-07cc-9d28-0a0d7cc95fdb"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:11.189 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,39,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@44bdf610, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@13bb67e5, uuid -> 0fd4e582-8d72-43cd-9159-1ae3a6da5af6),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$595/0x0000000801064da8@7e2e8b88,io.netty.channel.nio.NioEventLoop@3fc08eec)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	X-Correlation-ID: 0fd4e582-8d72-43cd-9159-1ae3a6da5af6
+	accept: application/json
+	content-type: application/json
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "f26b02f1-0b0e-01da-a2e6-dcd7215e94e4"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:57.612 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,6,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@11162775, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@f19a2b1, uuid -> 49ae5f50-a677-42b2-bb35-4f3ac355da8d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@315df4bb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 49ae5f50-a677-42b2-bb35-4f3ac355da8d
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "3",
+  "version": "02",
+  "uniqueKey": "a04c4b52-2570-0220-b784-269447039e2e"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:57.865 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,7,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2ba8ba9b, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@6eaa218a, uuid -> 425e9394-f5f1-439b-bcee-ae05c3723601),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@3fc08eec)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 425e9394-f5f1-439b-bcee-ae05c3723601
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "fbb30ef0-db11-0357-aa88-efe92d7a7f1f"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:58.221 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,2,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5340efd, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4036903f, uuid -> 1d38f430-a0ec-43b4-b064-cef0bc8975df),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@61e3a1fd)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 1d38f430-a0ec-43b4-b064-cef0bc8975df
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "fd4e1525-dc93-06a2-bc2e-3510a5f7e71c"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:58.269 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,1,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7769cfcd, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4a743edd, uuid -> ff1b34f4-57c3-4131-898a-32fc0134805a),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@6bd51ed8)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: ff1b34f4-57c3-4131-898a-32fc0134805a
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "c56d117b-84cb-0fba-8195-c7e394831fc1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:58.380 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,8,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@186682ee, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5d640f86, uuid -> 08c201c9-e94c-4a3b-bfb4-2b5edb15ed04),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@5cad8b7d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 08c201c9-e94c-4a3b-bfb4-2b5edb15ed04
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "99e6d0b8-957f-05ca-9da4-00979170f17e"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:58.547 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,3,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@54f30017, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@11f184ed, uuid -> 53c758aa-2020-4456-a15f-887d26fa10f1),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@51abf713)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 53c758aa-2020-4456-a15f-887d26fa10f1
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "d3ebed00-74aa-0475-bdca-928bd5692595"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:58.893 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,9,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6d5c955d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@285e1692, uuid -> 4061a0f9-7dcc-4b70-98cd-a64ad8795451),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@7b02e036)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 4061a0f9-7dcc-4b70-98cd-a64ad8795451
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "7",
+  "version": "02",
+  "uniqueKey": "e5a02cf1-8c4d-055b-9572-bc7d76c97b4d"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:59.330 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,10,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1a0cff57, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5f0e7272, uuid -> acc44796-c524-4be2-8fed-d334f1cc0610),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@25243bc1)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: acc44796-c524-4be2-8fed-d334f1cc0610
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "d246cd91-3c20-0fcc-aec7-779f0312d97f"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:59.344 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,4,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1332cf65, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@56304367, uuid -> 7995aacf-1b05-4743-b032-5e3d0b4c575d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@eadb475)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 7995aacf-1b05-4743-b032-5e3d0b4c575d
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "814d48ce-8b95-02ee-b234-d40c63b81b97"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:59.624 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,5,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5b136043, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@1e11f545, uuid -> 59d34c60-e14e-4330-9f18-ef95ba2fe78e),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@4d4d48a6)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 59d34c60-e14e-4330-9f18-ef95ba2fe78e
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "f9928897-1700-03c3-8c58-a935ad9c349d"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:25:59.877 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,13,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@18a7302, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4488ed57, uuid -> 621636f5-633d-4fd2-af6b-e7e199f721c1),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@4201a617)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 621636f5-633d-4fd2-af6b-e7e199f721c1
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "7",
+  "version": "02",
+  "uniqueKey": "af04d176-ae6a-0819-bb75-3dfc6c40b1cc"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:00.051 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,11,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@683f2bfd, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2d3da89e, uuid -> ad22a98d-500a-47aa-bd9a-e6d3f7eebf57),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@1e287667)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: ad22a98d-500a-47aa-bd9a-e6d3f7eebf57
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "fb44bd19-62d6-06c9-96a4-774e4747e9da"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:00.325 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,14,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6e86db51, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2b8458e5, uuid -> dec31efc-97cd-4508-8e88-5d6d35d4d968),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@467f77a5)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: dec31efc-97cd-4508-8e88-5d6d35d4d968
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "eac4da4d-711b-0345-90e7-cf08249d2e0f"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:00.549 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,12,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3dae07b, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@46d86e64, uuid -> 02ae4ff8-8af2-42ca-8faa-32778aa7e2db),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@2e6ee0bc)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 02ae4ff8-8af2-42ca-8faa-32778aa7e2db
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "f2040e0b-e4f6-0bce-bcab-bcb707ab8f29"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:00.874 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,17,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@78da7659, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3dd8e726, uuid -> d9192c85-8d06-44bb-b41a-d4687a460f04),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@df5f5c0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: d9192c85-8d06-44bb-b41a-d4687a460f04
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "9",
+  "version": "02",
+  "uniqueKey": "c8e21642-9753-0db1-adf5-4c9eceafa7e1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:01.412 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'Post Validate' failed for user 18: status.find.is(200), but actually found 500
+10:26:01.413 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: KO status.find.is(200), but actually found 500
+=========================
+Session:
+Session(Validate Request,18,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3607d289, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@ec6c918, uuid -> c2c8f541-ae2a-4459-a390-1be588eb7811),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@308a6984)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: c2c8f541-ae2a-4459-a390-1be588eb7811
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "1",
+  "version": "02",
+  "uniqueKey": "ea68d479-18a6-0837-85a7-3a00e4f79bf5"
+}}
+=========================
+HTTP response:
+status:
+	500 Server Error
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: f60fcefc-a79f-49f5-b3f4-9c4391f9f8f8
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Error": "Please try again later."
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:01.569 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,16,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@50705706, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@1572d36c, uuid -> 31686953-7de1-49d8-befb-ecae440e4082),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@420bc288)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 31686953-7de1-49d8-befb-ecae440e4082
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "aec146f0-2333-03b5-b39f-5ffaf2620276"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:01.806 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,15,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3e810e1, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@46ea9ef8, uuid -> 0478d5cb-86dc-4e73-a2a4-65b4602a9161),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@1bb9aa43)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 0478d5cb-86dc-4e73-a2a4-65b4602a9161
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "ce0223d6-ea8b-0a9e-b857-a5d2a71df261"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:01.919 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,19,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@3ee4e18, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@46ecc001, uuid -> 402ca4d4-6202-42b7-9934-226f08bd04a7),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@66b72664)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 402ca4d4-6202-42b7-9934-226f08bd04a7
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "a952d34f-c87e-0970-a600-19f9c3bda787"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:01.955 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,21,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6c675548, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2965d6a0, uuid -> 7be5e7e1-658a-466f-9209-41c44f0b32bd),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@58cd06cb)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 7be5e7e1-658a-466f-9209-41c44f0b32bd
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "9",
+  "version": "02",
+  "uniqueKey": "f3ab06f3-2600-02d8-9488-1d6cb9b5aea1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:02.442 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,22,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6086135e, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2584812a, uuid -> ac8617a6-5b5c-48c3-b3a1-f2d62e774c55),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@3be8821f)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: ac8617a6-5b5c-48c3-b3a1-f2d62e774c55
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "a220afa4-2f88-059c-a52b-dff1a7fdc777"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:02.862 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,25,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@35d00b6b, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@70d283b5, uuid -> 7f0d2047-be76-4c74-abf8-8bf0ce4bd7d3),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@bae47a0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 7f0d2047-be76-4c74-abf8-8bf0ce4bd7d3
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "3",
+  "version": "02",
+  "uniqueKey": "d16ab457-6133-05ac-969c-8c8ba58e4aee"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:02.862 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,20,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@18376d28, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@5d35e04a, uuid -> 1eb97aa0-9e15-4b6f-afca-948d623ac487),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@7a34b7b8)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 1eb97aa0-9e15-4b6f-afca-948d623ac487
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "c78830bb-5942-0370-b795-c2458a71572a"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:03.087 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,23,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6e29e488, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2b2b6729, uuid -> d601b2ab-ef25-48ec-b658-637b70127673),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@64b31700)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: d601b2ab-ef25-48ec-b658-637b70127673
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "8e3f96bc-bb4c-0a6c-9bbe-6dc9816e5927"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:03.415 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,26,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@b5e70c9, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4e5cffc6, uuid -> debedf09-24e0-496d-89f3-f5cd4fb9576e),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@74a9c4b0)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: debedf09-24e0-496d-89f3-f5cd4fb9576e
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "3",
+  "version": "02",
+  "uniqueKey": "a11d55a7-4538-0de9-9b20-e931075d4f8b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:03.839 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,29,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@7cda67b6, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@39d8f649, uuid -> 30d1779b-28d3-4393-9f98-bc48755001a8),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@65ef722a)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 30d1779b-28d3-4393-9f98-bc48755001a8
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "7",
+  "version": "02",
+  "uniqueKey": "80a930b9-7e33-055f-870b-1a10fb56617e"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:03.943 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,27,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@167f2548, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@537db9e3, uuid -> 5e1bd155-55d7-44a2-8550-1a72409eeec6),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@85ec632)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 5e1bd155-55d7-44a2-8550-1a72409eeec6
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b50eb192-9c30-050d-a826-ddde61eae6d1"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:04.276 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,24,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@5791708a, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@1293f41c, uuid -> 146c4f64-44a2-4413-8d32-e111cd298753),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@3b65e559)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 146c4f64-44a2-4413-8d32-e111cd298753
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "aa5bb91e-54a9-0a88-af69-f489974e2f38"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:04.520 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,30,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@46d1597, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@416f8b7e, uuid -> 95d93d87-df92-47de-b511-fb26fdff0993),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@5fd9b663)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 95d93d87-df92-47de-b511-fb26fdff0993
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "8",
+  "version": "02",
+  "uniqueKey": "efaa1fbf-9087-0711-8266-bbe251463047"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:04.809 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,28,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@4bc7d8cb, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@ec54fd7, uuid -> 4ca03939-9d0f-46b1-987e-f47e3260b21f),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@1c05a54d)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 4ca03939-9d0f-46b1-987e-f47e3260b21f
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "b1d11b80-4e2c-0add-bdec-f3c387da8452"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:04.873 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,33,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@2d6e2027, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@261326d9, uuid -> cb93c2bd-5b40-44c9-94d5-5efa5e3ff74f),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@6bd51ed8)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: cb93c2bd-5b40-44c9-94d5-5efa5e3ff74f
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "7",
+  "version": "02",
+  "uniqueKey": "b840f8d5-ccc2-0170-9620-f73a3942389c"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:05.164 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,31,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@32f330b4, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@77f1a88e, uuid -> a7b1b82b-5d58-4971-a9a4-d4ca72899506),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@214894fc)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: a7b1b82b-5d58-4971-a9a4-d4ca72899506
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "c08adf37-eee0-02ae-a531-ad4b69949453"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:05.389 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,34,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@4e50fb98, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@4fdeb7b4, uuid -> e8df74eb-06d9-4253-8b8f-eaacdf5cb444),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@61e3a1fd)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: e8df74eb-06d9-4253-8b8f-eaacdf5cb444
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "5",
+  "version": "02",
+  "uniqueKey": "a1851e3a-35cd-0405-9f40-8962e2acf602"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:05.906 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,35,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6c954c31, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@71de7ba2, uuid -> a86faa9e-135a-4dbd-a76c-78bdf21e0b1d),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@51abf713)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: a86faa9e-135a-4dbd-a76c-78bdf21e0b1d
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "cd9a89aa-7e71-07ff-abe7-496bf4be0f2f"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:05.906 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,36,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@62e0e068, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@361fbc28, uuid -> aa5e94c1-49ad-4db5-bd3a-2bde9aab203c),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@eadb475)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: aa5e94c1-49ad-4db5-bd3a-2bde9aab203c
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "2",
+  "version": "02",
+  "uniqueKey": "d5b50ce9-880d-0082-a777-936c7247a987"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:06.402 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,39,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@319c1f0d, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@e85dec5, uuid -> c61df416-33f4-405e-876b-472897fadb81),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@3fc08eec)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: c61df416-33f4-405e-876b-472897fadb81
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "3",
+  "version": "02",
+  "uniqueKey": "a9f9a22a-025a-0b83-9b9e-7e10584c218b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:06.751 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,37,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@6f946160, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@7e3e0a0a, uuid -> 6ff41726-f256-49ff-963e-3f4eda8be1a3),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@4d4d48a6)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 6ff41726-f256-49ff-963e-3f4eda8be1a3
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "d54ccf57-fc3e-0e34-b26a-2dbaac4ebf51"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:06.882 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,38,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@207807ea, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3f5bb248, uuid -> 4bf1041b-539a-457e-9d35-f27cfa78fe40),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@315df4bb)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 4bf1041b-539a-457e-9d35-f27cfa78fe40
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "a1029f8a-05bb-0539-9634-a0d38071173b"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:06.944 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Validate: OK 
+=========================
+Session:
+Session(Validate Request,40,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@402ecf75, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@3d4bf0c9, uuid -> 44e2c622-f840-4a19-92da-89ff7a8f6916),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@49f0579,io.netty.channel.nio.NioEventLoop@5cad8b7d)
+=========================
+HTTP request:
+POST http://localhost:8080/Validate
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: 44e2c622-f840-4a19-92da-89ff7a8f6916
+	host: localhost:8080
+	content-length: 104
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": "3",
+  "version": "02",
+  "uniqueKey": "984a78d3-6f04-0632-80f9-e9a95ed5ceaa"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 142387c5-a5e5-4587-9e2d-a8adc4e9f909
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "Timestamp":"2021-03-17T15:05:15",
+    "IsValid": true,
+    "ValidationFailures":[]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<
+10:26:07.135 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+Post Map: OK 
+=========================
+Session:
+Session(Map Request,32,Map(gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@23717414, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@2cb21bdc, uuid -> c0193755-288e-4dbf-8831-95c51baf4e22),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$594/0x0000000801064788@2cba65b9,io.netty.channel.nio.NioEventLoop@271f18d3)
+=========================
+HTTP request:
+POST http://localhost:8080/Map
+headers:
+	Api-Key: wiremock
+	accept: application/json
+	content-type: application/json
+	X-Correlation-ID: c0193755-288e-4dbf-8831-95c51baf4e22
+	host: localhost:8080
+	content-length: 107
+body:StringChunksRequestBody{charset=UTF-8, content={
+  "messageNumber": 300255,
+  "version": "02",
+  "uniqueKey": "8ff27268-d23a-0312-920f-0d828c7579b0"
+}}
+=========================
+HTTP response:
+status:
+	200 OK
+headers:
+	Content-Type: application/json
+	x-correlation-id: {{request.headers.x-correlation-id}}
+	Matched-Stub-Id: 23269958-3a90-4c85-9896-91bf35cda607
+	Vary: Accept-Encoding, User-Agent
+	Transfer-Encoding: chunked
+
+body:
+{
+    "timestamp":"2021-03-17T15:05:15",
+    "mappedMessages":[
+        {
+            "messageVersion": "1",
+            "payload":"{\"foo\":\"bar\"}",
+            "destinations":[
+                {
+                    "type": "ServiceBusTopic",
+                    "name": "foo"
+                }
+            ]
+        }
+    ]
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<

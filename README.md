@@ -22,13 +22,17 @@ The API required for testing is [here](https://github.com/fatmanmclone90/wiremoc
 In terminal:
 
 ```
-    mvn clean -e gatling:test -DbaseUrl="http://localhost:8080" -DdurationSeconds="60" -DnumberOfMessages="120" -DapiKey="wiremock" "-Dgatling.simulationClass=com.next.simulations.LoadTest"
+    cd ./Source
+
+    mvn clean -e gatling:test -DbaseUrl="http://localhost:8080" -DdurationSeconds="10" -DnumberOfMessages="20" -DapiKey="wiremock" "-Dgatling.simulationClass=com.next.simulations.LoadTest"
 ```
 
 ## Test Report
 
 After execution HTML test report can be found at `C:\next\Whds.DummyProvider.PerformanceTests\Source\target\gatling\`
 
+See [here](https://gatling.io/docs/gatling/reference/current/stats/reports/) for report description.
+
 ## Test Log
 
-Test log can be found at: `Source/gatlig.log`.  See `Source/src/test/resources/logback.xml` for configuration.
+Test log can be found at: `Source/gatling.log`.  See `Source/src/test/resources/logback.xml` for configuration.

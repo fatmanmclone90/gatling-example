@@ -6,6 +6,7 @@
  import io.gatling.http.Predef._
  import io.gatling.http.request.builder.HttpRequestBuilder
 
+ // https://gatling.io/docs/gatling/reference/current/http/request/
  class ValidateRequestBuilder {
    def Build() : HttpRequestBuilder = {
 
