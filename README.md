@@ -27,6 +27,22 @@ In terminal:
     mvn clean -e gatling:test -DbaseUrl="http://localhost:8080" -DdurationSeconds="10" -DnumberOfMessages="20" -DapiKey="wiremock" "-Dgatling.simulationClass=com.next.simulations.LoadTest"
 ```
 
+## Building ##
+
+To ensure the project can build:
+```
+    cd ./Source
+    mvn clean
+```
+
+## Checking for Package Updates
+
+To ensure the project can build:
+```
+    cd ./Source
+    mvn versions:display-dependency-updates
+```
+
 ## Test Report
 
 After execution HTML test report can be found at `C:\next\Whds.DummyProvider.PerformanceTests\Source\target\gatling\`
