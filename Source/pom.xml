@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>Next.Warehouse.PerformanceTests.Example</groupId>
-  <artifactId>Next.Warehouse.PerformanceTests.Example</artifactId>
+  <groupId>PerformanceTest.Example</groupId>
+  <artifactId>PerformanceTest.Example</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -13,9 +14,9 @@
     <scala.version>2.13.10</scala.version>
     <scala.compat.version>2.13.10</scala.compat.version>
     <gatling.version>[3.9.2,4.0)</gatling.version>
-    <gatling-maven-plugin.version>4.2.9</gatling-maven-plugin.version>
+    <gatling-maven-plugin.version>4.3.0</gatling-maven-plugin.version>
     <typesafe-config.version>1.4.2</typesafe-config.version>
-    <scala-maven-plugin.version>4.5.6</scala-maven-plugin.version>
+    <scala-maven-plugin.version>4.8.1</scala-maven-plugin.version>
     <className></className>
   </properties>
 
@@ -51,25 +52,40 @@
     </testResources>
 
     <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.0.0-M5</version>
-    </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>4.8.1</version>
+        <executions>
+          <execution>
+            <id>enforce-maven</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>3.8.6</version>
+                </requireMavenVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>io.gatling</groupId>
         <artifactId>gatling-maven-plugin</artifactId>
         <version>${gatling-maven-plugin.version}</version>
-          <configuration>
-            <simulationClass>${className}</simulationClass>
-            <!-- <runMultipleSimulations>true</runMultipleSimulations> -->
-            <!-- <includes>
-              <param>com.next.simulations.WarmUp</param>
-              <param>com.next.simulations.LoadTest</param>
-            </includes> -->
-          </configuration>
+        <configuration>
+          <simulationClass>${className}</simulationClass>
+        </configuration>
       </plugin>
-       <plugin>
+      <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
         <version>${scala-maven-plugin.version}</version>

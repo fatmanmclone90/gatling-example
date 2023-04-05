@@ -41,7 +41,11 @@ To ensure the project can build:
 ```
     cd ./Source
     mvn versions:display-dependency-updates
+
+    mvn versions:display-plugin-updates
 ```
+
+Suggested changes can be applied in `pom.xml`.
 
 ## Test Report
 
