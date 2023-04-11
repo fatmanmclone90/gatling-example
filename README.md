@@ -4,9 +4,16 @@ Example of using Gatling for API Testing.
 
 ## Pre-Requisites
 
-1. [Java JDK](https://www.oracle.com/java/technologies/downloads/)
+1. [Java JDK](https://www.oracle.com/java/technologies/downloads/) 18.0.2
 1. [VSCode](https://code.visualstudio.com/download)
-1. [Maven](https://maven.apache.org/install.html)
+1. [Maven](https://maven.apache.org/install.html) 3.8.6
+
+### Checking Installed Versions
+
+```
+    java --version
+    mvn --version
+```
 
 VSCode Extensions:
 1. Scala Metals
