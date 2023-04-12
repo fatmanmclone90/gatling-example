@@ -8,7 +8,11 @@ import io.gatling.http.Predef._
 import com.next.config.UuidFeeder
 
 object MapScenarios {
-  val mapRequestScenario = scenario("Map Request")
-      .feed(UuidFeeder.feeder)
-      .exec(new MapRequestBuilder().Build())
+  val messageType = "Map"
+  val defaultScenario = scenario(s"$messageType Request")
+    .feed(UuidFeeder.feeder)
+    .exec(
+      new RequestBuilder()
+        .Build(messageType, s"/$messageType")
+    )
 }

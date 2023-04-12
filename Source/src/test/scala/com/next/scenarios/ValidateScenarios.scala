@@ -8,7 +8,11 @@ import io.gatling.http.Predef._
 import com.next.config.UuidFeeder
 
 object ValidateScenarios {
-  val validateRequestScenario = scenario("Validate Request")
-      .feed(UuidFeeder.feeder)
-      .exec(new ValidateRequestBuilder().Build())
+  val messageType = "Validate"
+  val defaultScenario = scenario(s"$messageType Request")
+    .feed(UuidFeeder.feeder)
+    .exec(
+      new RequestBuilder()
+        .Build(messageType, s"/$messageType")
+    )
 }
