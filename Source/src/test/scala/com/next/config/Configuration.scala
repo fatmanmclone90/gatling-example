@@ -1,4 +1,4 @@
-package com.next.config
+package com.example.config
 
 //This is where you set configuration values for the project
 object Configuration {

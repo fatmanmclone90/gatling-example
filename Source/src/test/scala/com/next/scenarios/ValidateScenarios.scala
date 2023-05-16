@@ -1,11 +1,11 @@
-package com.next.scenarios
+package com.example.scenarios
 
-import com.next.requestBuilders._
+import com.example.requestBuilders._
 import io.gatling.core.Predef.scenario
 import io.gatling.core.structure.ScenarioBuilder
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import com.next.config.UuidFeeder
+import com.example.config.UuidFeeder
 
 object ValidateScenarios {
   val messageType = "Validate"

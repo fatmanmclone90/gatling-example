@@ -1,7 +1,7 @@
-package com.next.requestBuilders
+package com.example.requestBuilders
 
-import com.next.config.Configuration._
-import com.next.config.UuidFeeder
+import com.example.config.Configuration._
+import com.example.config.UuidFeeder
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
@@ -9,7 +9,7 @@ import io.gatling.http.request.builder.HttpRequestBuilder
 class RequestBuilder {
   def Build(filename: String, route: String): HttpRequestBuilder = {
     return http(s"Post $filename")
-      .post(baseUrl + s"/$route")
+      .post(route)
       .header("Api-Key", apiKey)
       .header("X-Correlation-ID", "#{uuid}")
       .body(ElFileBody(s"data//$filename.json"))
