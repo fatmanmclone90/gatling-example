@@ -2,6 +2,7 @@ package com.example.simulations
 
 import com.example.config.Configuration._
 import com.example.scenarios._
+import com.example.simulationHelpers._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import scala.concurrent.duration._
@@ -11,10 +12,12 @@ class LoadTest extends Simulation {
   val _durationSeconds: Int = durationSeconds;
   val _baseUrl: String = baseUrl;
 
+  val userAgent: String = (new UserAgentHelper()).get("performance-tests");
   def printVariables() = {
     println(s"Base URL $baseUrl");
     println(s"Duration Minutes $durationSeconds");
     println(s"Number of Messages $numberOfMessages");
+    println(s"User Agent $userAgent");
   }
 
   printVariables();
@@ -34,7 +37,11 @@ class LoadTest extends Simulation {
 
   // https://gatling.io/docs/gatling/reference/current/core/assertions/
   setUp(_validateSimulation, _mapSimulation)
-    .protocols(http.baseUrl(_baseUrl).shareConnections.disableFollowRedirect)
+    .protocols(http
+      .baseUrl(_baseUrl)
+      .userAgentHeader(userAgent) 
+      .shareConnections
+      .disableFollowRedirect)
     .assertions(global.responseTime.percentile(95).lt(1000))
     .assertions(global.failedRequests.percent.lt(1))
     .assertions(details("Map Group").responseTime.percentile(95).lt(100))

@@ -31,7 +31,7 @@ In terminal:
 ```
     cd ./Source
 
-    mvn clean -e gatling:test -DbaseUrl="http://localhost:8080" -DdurationSeconds="10" -DnumberOfMessages="20" -DapiKey="wiremock" "-Dgatling.simulationClass=com.example.simulations.LoadTest"
+    mvn clean -e gatling:test -DbaseUrl="http://localhost:5001" -DdurationSeconds="60" -DnumberOfMessages="500" -DapiKey="wiremock" "-Dgatling.simulationClass=com.example.simulations.LoadTest"
 ```
 
 In Docker:
@@ -63,7 +63,7 @@ Suggested changes can be applied in `pom.xml`.
 
 ## Test Report
 
-After execution HTML test report can be found at `C:\next\Whds.DummyProvider.PerformanceTests\Source\target\gatling\`
+After execution HTML test report can be found at `.\Source\target\gatling\`
 
 See [here](https://gatling.io/docs/gatling/reference/current/stats/reports/) for report description.
 
