@@ -37,9 +37,13 @@ In terminal:
 In Docker:
 
 ```
-    docker run --rm --name gatling-example -v "PWD":/usr/src/mymaven -w /usr/src/mymaven maven:3.8.6-jdk-11 mvn clean -e gatling:test -DbaseUrl="http://localhost:8080" -DdurationSeconds="10" -DnumberOfMessages="20" -DapiKey="wiremock" "-Dgatling.simulationClass=com.example.simulations.LoadTest"
+    cd ./Source
+
+    docker run --rm --name gatling-example -v ${PWD}:/usr/src/mymaven -w /usr/src/mymaven --net wiremock maven:3.8.6-jdk-11 mvn clean -e gatling:test -DbaseUrl="http://wiremock:8080" -DdurationSeconds="10" -DnumberOfMessages="20" -DapiKey="wiremock" "-Dgatling.simulationClass=com.example.simulations.LoadTest"
 ```
-IF running on Windows use either ${PWD} for Powershell or %cd% for CMD rather than "PWD".
+- IF running on Windows use either ${PWD} for Powershell or %cd% for CMD rather than "PWD".
+- Assumes the Wiremock container is running on a "wiremock" network
+- Assumes the Wiremock container has name "wiremock"
 
 ## Building ##
 
