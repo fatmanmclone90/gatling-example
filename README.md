@@ -74,3 +74,8 @@ See [here](https://gatling.io/docs/gatling/reference/current/stats/reports/) for
 ## Test Log
 
 Test log can be found at: `Source/gatling.log`.  See `Source/src/test/resources/logback.xml` for configuration.
+
+# Other
+
+See possible gatling commands:
+`mvn gatling:help `
