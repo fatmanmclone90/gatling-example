@@ -1,9 +1,9 @@
-package com.example.simulationHelpers
+package com.example.helpers
 
 import java.util.{Calendar, Date}
 import java.text.SimpleDateFormat
 
-class UserAgentHelper {
+object UserAgentHelper {
 
   def get(base: String): String = {
     val dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");

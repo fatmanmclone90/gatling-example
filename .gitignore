@@ -10,3 +10,4 @@ obj
 **/executionLogs.txt
 **/*.log
 .metals/
+.bloop/
