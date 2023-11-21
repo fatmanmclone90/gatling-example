@@ -74,3 +74,28 @@ See [here](https://gatling.io/docs/gatling/reference/current/stats/reports/) for
 ## Test Log
 
 Test log can be found at: `Source/gatling.log`.  See `Source/src/test/resources/logback.xml` for configuration.
+
+# Other
+
+See possible gatling commands:
+`mvn gatling:help `
+
+# Aggregating Simulation Logs
+
+Move all `simulation.logs` to a folder with a unique name e.g.
+
+```
+loadTest-20230101
+  - simulationlog-a.log
+  - simulationlog-b.log
+```
+
+Execute command:
+
+(Windows Powershell Example)
+```
+mvn gatling:test "-Dgatling.reportsOnly=loadTest-20230101 "-Dgatling.resultsFolder=C:\temp\gatlingReports"
+```
+
+A combined HTML report will be generated in the same location.
+
