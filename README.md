@@ -1,6 +1,6 @@
 # Gatling Example
 
-Example of using Gatling for API Testing.
+Example of using Gatling for API Testing.  Based on Gatling (example)[https://github.com/gatling/gatling-maven-plugin-demo-scala/blob/main/pom.xml].
 
 ## Pre-Requisites
 
